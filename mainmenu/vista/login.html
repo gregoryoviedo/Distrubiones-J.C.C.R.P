@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+   
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Estilos Css -->
+    <link rel="stylesheet" href="../../recursos/libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../recursos/css/stylelogin.css">
+</head>
+<body>
+    <!---Inicio del formulario para ingresar---->
+  <div class="login-box">
+    <h1 class="font-weight-bold">INICIAR SESION</h1>
+      <form id="form_login" method="POST">
+        <div class="datos-intro">
+          <i class="caret fas fa-user"></i>
+          <input type="text" placeholder="Usuario" name="usuario" id="usuario" maxlength=15 autocomplete="off">
+        </div>
+        <div class="datos-intro">
+          <i class="caret fas fa-lock"></i>
+          <input type="password" placeholder="Contreseña" name="pass" id="pass" maxlength=15>
+        </div>
+        <button type="submit" class="btn btn-warning font-weight-bold w-100 mt-4" onclick="">Ingresar</button>
+      </form>
+  </div>
+  <!---Final del formulario para ingresar---->
+
+  <!-- MODAL ERROR -->
+    <div class="modal fade" id="alertaError" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal">Error</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </div>
+                    <div class="alert alert-danger" role="alert" id="mensajeError">
+                    
+                    </div>
+                <div class="modal-footer">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script src="../../recursos/libs/jquery.js"></script>
+  <script src="../../recursos/libs/bootstrap/js/popper.js"></script>
+  <script src="../../recursos/libs/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../recursos/js/login.js"></script>
+  <script src="../../recursos/libs/all.min.js"></script>
+
+</body>
+</html>

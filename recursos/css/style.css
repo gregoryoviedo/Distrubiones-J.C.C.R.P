@@ -1,0 +1,155 @@
+
+
+/*==========================================================
+Inhabilitar flechas arriba y abajos en los input tipo number
+===========================================================*/
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*================================================
+Modificacion de la barra lateral derecha de scroll
+================================================*/
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #525965;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #525965;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #525965;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: transparent;
+}
+
+::-webkit-scrollbar-track:active {
+    background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+  
+.formulario__input {
+  padding: 20px;
+  z-index: 2000;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px;
+}
+
+.formulario__input:focus {
+  outline: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.formulario__input:focus + .formulario__label {
+  margin-top: -110px;
+  font-size: 12px;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.formulario__label {
+  padding-left: 15px;
+  position: absolute;
+  margin-top: -73px;
+  z-index: -1;
+  color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  cursor: none;
+}
+
+.fijar {
+  margin-top: -110px !important;
+  font-size: 12px !important;
+}
+
+.azul-rey {
+  background-color: #0833a2;
+  color: #ffffff;
+}
+
+.azul-rey-boton {
+  background-color: #0833a2;
+  color: #ffffff;
+}
+
+.azul-rey-boton:hover{
+  background-color: #0E43CC;
+  color: #ffffff;
+}
+
+.contenedor_foto {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.contenedor_foto img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.card_custom {
+  box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.3);
+}
+
+.texto_cargo {
+  text-align: center;
+  font-size: 13px;
+  background-color: transparent;
+  border: 1px solid#221E1E;
+  font-weight: bold;
+  
+  display: block;
+  padding: 0.2rem;
+  border-radius: 20px;
+}
+
+.bg-azul-rey {
+  background-color: #121C3B !important;
+  color: #eee;
+}
+
+.bg-azul-rey:hover {
+  background-color: #121C3B !important;
+  color: #eee;
+}
+
+.border_dropdown {
+  border: 1px solid #121C3B !important;
+}
+
+.foto_empleado_ruta {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
